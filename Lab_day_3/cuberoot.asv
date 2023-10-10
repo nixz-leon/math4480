@@ -1,0 +1,18 @@
+function [p,n] = cuberoot(p, tol) 
+a= 0;
+n = 0;
+fp = (p*p*p) -a;
+fprintf('f(%4.30f) = %4.30f \n',[p,fp]);
+while abs(fp)>tol
+    %
+    
+    p = (2/3)*p - (a/(p*p));
+    n = n+1;
+    if fp == 18
+        return
+    end
+    fp = (p*p*p) -a;
+    fprintf('f(%4.30f) = %4.30f \n',[p,fp]);
+end
+
+end

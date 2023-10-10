@@ -1,0 +1,6 @@
+function f = funcp(x)
+
+%f = 3*x.^2 -4*x;
+f = 3*x.^2+6*x;
+f
+end

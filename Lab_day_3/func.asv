@@ -1,0 +1,7 @@
+function f = func(x)
+
+%f = (x^3) - 2*(x^2)- 5;
+f = (x.^3) + 3.*(x^2)-1;
+%f = x - cos(x);
+%f = x-0.8-0.2*sin(x);
+end
