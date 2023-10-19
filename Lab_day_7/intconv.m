@@ -8,8 +8,8 @@ b= 1;
 [T5,M5,S5,G5] = nint(a,b,@intfunc, 32);
 
 
-actual = pi;
-%actual = 2/3;
+%actual = pi;
+actual = 2/3;
 ET = abs(actual - [T1,T2,T3,T4,T5]);
 EM = abs(actual - [M1,M2,M3,M4,M5]);
 ES = abs(actual - [S1,S2,S3,S4,S5]);

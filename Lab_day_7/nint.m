@@ -5,16 +5,19 @@ T = 0;
 M = 0;
 S = 0;
 G = 0;
+disp("Trapizoidal")
 tic
 for i=1:n
     T = T + feval(func, a+(i-1)*h) + feval(func, a+(i)*h);
 end
 toc
+disp("Mid point")
 tic
 for i=1:n
     M = M + feval(func, a + (2*i-1)*(h/2));
 end
 toc
+disp("Gausian")
 tic
 [x,w] = gauss(n);
 t = (b-a)/2.*x + (b-a)./2;
@@ -22,6 +25,7 @@ for i=1:n
     G = G + feval(func, t(i)).*w(i); 
 end
 toc
+disp("Simpsons")
 tic
 for i=1:n
     j = mod(i,2);
