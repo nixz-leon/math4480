@@ -1,3 +1,4 @@
 function f = intfunc(x)
-f = x.^4;
+f = 4./(1+(x.^2));
+%f = sqrt(x);
 end
